@@ -1,18 +1,32 @@
-# Vue 3 + TypeScript + Vite
+# Vini
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<p align="center">
+  
+<h4>
+  Meu portfólio
+</h4>
 
-## Recommended IDE Setup
+## 💡 Tecnologias
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Tecnologias utilizada no projeto:
 
-## Type Support For `.vue` Imports in TS
+<img src="https://camo.githubusercontent.com/c8f91d18976e27123643a926a2588b8d931a0292fd0b6532c3155379e8591629/68747470733a2f2f7675656a732e6f72672f696d616765732f6c6f676f2e706e67" alt='vue' width="60">&nbsp;
+&nbsp;
+<img src="https://cdn.iconscout.com/icon/free/png-512/typescript-1174965.png" alt="typescript" width="60">&nbsp;
+&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="tailwind" width="60">&nbsp;
+&nbsp;
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## 🚀 Como executar
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+- Clone o repositório
+- Instale as dependências com `pnpm`
+- Inicie o servidor com `pnpm dev`
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+Agora você pode acessar [`localhost:5173`](http://localhost:5173) do seu
+navegador.
+
+<div>
+  <img align="left" src="https://avatars.githubusercontent.com/u/62653539?v=4" width=35 alt="Profile"/>
+  <sub>Made with 💜 by <a href="https://github.com/ovinidev">Vinícius Medeiros</a></sub>
+</div>
