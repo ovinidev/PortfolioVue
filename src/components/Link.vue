@@ -1,17 +1,10 @@
-<script lang="ts">
-import { toRefs } from "vue";
+<script setup lang="ts">
+import { defineProps } from "vue";
 
-export default {
-  props: {
-    name: String,
-    link: String,
-  },
-  setup(props) {
-    const { name, link } = toRefs(props);
-
-    return { name, link };
-  },
-};
+defineProps({
+  name: String,
+  link: String,
+});
 </script>
 
 <template>
