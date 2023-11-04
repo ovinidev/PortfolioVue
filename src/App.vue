@@ -4,20 +4,86 @@ import Logo from "./components/Logo.vue";
 import { TECHNOLOGIES } from "./constants/technologies";
 // @ts-ignore
 import VueWriter from "vue-writer";
+import { driver } from "driver.js";
+import "./driverjs.css";
+import { onMounted } from "vue";
+
+const driverObj = driver({
+  showProgress: false,
+  allowClose: false,
+  popoverClass: "driverjs-theme",
+  steps: [
+    {
+      element: "#name",
+      popover: {
+        title: "Nome",
+        description:
+          "Aqui possui meu nome utilizando a biblioteca vue-writer para animação de digitação.",
+        side: "left",
+        align: "start",
+      },
+    },
+    {
+      element: "#image",
+      popover: {
+        title: "Foto",
+        description: "Foto utilizada nas redes sociais.",
+        side: "left",
+        align: "start",
+      },
+    },
+    {
+      element: "#content-1",
+      popover: {
+        title: "Descrição",
+        description: "Aqui uma breve descrição sobre mim.",
+        side: "right",
+        align: "start",
+      },
+    },
+    {
+      element: "#techs",
+      popover: {
+        title: "Tecnologias",
+        description: "Tecnologias que utilizo no meu dia a dia.",
+        side: "top",
+        align: "center",
+      },
+    },
+    {
+      element: "#social",
+      popover: {
+        title: "Social",
+        description: "Links para minhas principais redes sociais.",
+        side: "right",
+        align: "center",
+      },
+    },
+  ],
+});
+
+onMounted(() => {
+  driverObj.drive();
+});
 </script>
 
 <template>
   <main
     className="flex min-h-screen flex-col items-center justify-start space-y-14 bg-background py-14 text-slate-50"
   >
-    <header className="flex h-44 w-44 flex-col items-center justify-between">
+    <header
+      id="header"
+      className="flex h-44 w-44 flex-col items-center justify-between"
+    >
       <VueWriter
+        id="name"
         class="text-slate-50"
         :array="['Vinícius Medeiros']"
         :iterations="1"
       />
 
       <img
+        id="image"
         className="h-36 rounded-full"
         alt="vini profile photo"
         src="https://github.com/ovinidev.png"
@@ -25,6 +91,7 @@ import VueWriter from "vue-writer";
     </header>
 
     <section
+      id="content-1"
       className="flex w-full flex-col items-start space-y-4 px-8 sm:w-[40rem] lg:w-[60rem]"
     >
       <p>
@@ -64,7 +131,7 @@ import VueWriter from "vue-writer";
     </section>
 
     <div className="flex flex-col items-center space-y-6">
-      <div className="flex flex-wrap items-center gap-3 px-8">
+      <div id="techs" className="flex flex-wrap items-center gap-3 px-8">
         <Logo
           v-for="tech in TECHNOLOGIES"
           :key="tech.alt"
@@ -73,7 +140,7 @@ import VueWriter from "vue-writer";
         />
       </div>
 
-      <div className="text-secondary flex items-center space-x-4">
+      <div id="social" className="text-secondary flex items-center space-x-4">
         <Link
           link="httEps://www.linkedin.com/in/vinimedeiros13"
           name="LinkedIn"
