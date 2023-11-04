@@ -5,7 +5,7 @@ import { TECHNOLOGIES } from "./constants/technologies";
 // @ts-ignore
 import VueWriter from "vue-writer";
 import { driver } from "driver.js";
-import "./driverjs.css";
+import "./styles.css";
 import { onMounted } from "vue";
 
 const driverObj = driver({
