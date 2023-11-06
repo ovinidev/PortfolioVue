@@ -4,66 +4,12 @@ import Logo from "./components/Logo.vue";
 import { TECHNOLOGIES } from "./constants/technologies";
 // @ts-ignore
 import VueWriter from "vue-writer";
-import { driver } from "driver.js";
 import "./styles.css";
 import { onMounted } from "vue";
-
-const driverObj = driver({
-  showProgress: false,
-  allowClose: false,
-  popoverClass: "driverjs-theme",
-  steps: [
-    {
-      element: "#name",
-      popover: {
-        title: "Nome",
-        description:
-          "Aqui possui meu nome utilizando a biblioteca vue-writer para animação de digitação.",
-        side: "left",
-        align: "start",
-      },
-    },
-    {
-      element: "#image",
-      popover: {
-        title: "Foto",
-        description: "Foto utilizada nas redes sociais.",
-        side: "left",
-        align: "start",
-      },
-    },
-    {
-      element: "#content-1",
-      popover: {
-        title: "Descrição",
-        description: "Aqui uma breve descrição sobre mim.",
-        side: "right",
-        align: "start",
-      },
-    },
-    {
-      element: "#techs",
-      popover: {
-        title: "Tecnologias",
-        description: "Tecnologias que utilizo no meu dia a dia.",
-        side: "top",
-        align: "center",
-      },
-    },
-    {
-      element: "#social",
-      popover: {
-        title: "Social",
-        description: "Links para minhas principais redes sociais.",
-        side: "right",
-        align: "center",
-      },
-    },
-  ],
-});
+import { driverService } from "./services/driver";
 
 onMounted(() => {
-  driverObj.drive();
+  driverService.drive();
 });
 </script>
 
@@ -130,7 +76,7 @@ onMounted(() => {
       </p>
     </section>
 
-    <div className="flex flex-col items-center space-y-6">
+    <footer className="flex flex-col items-center space-y-6">
       <div id="techs" className="flex flex-wrap items-center gap-3 px-8">
         <Logo
           v-for="tech in TECHNOLOGIES"
@@ -151,6 +97,6 @@ onMounted(() => {
           name="Youtube"
         />
       </div>
-    </div>
+    </footer>
   </main>
 </template>

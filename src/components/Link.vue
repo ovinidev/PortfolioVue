@@ -1,12 +1,16 @@
 <script setup lang="ts">
-defineProps({
+const { name } = defineProps({
   name: String,
   link: String,
 });
 </script>
 
 <template>
-  <a className="underline" target="_blank" rel="noreferrer" :href="link">
-    {{ name }}
-  </a>
+  <a
+    className="underline"
+    target="_blank"
+    rel="noreferrer"
+    :href="link"
+    :text="name"
+  />
 </template>
