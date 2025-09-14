@@ -38,8 +38,8 @@ import "./styles.css";
       className="flex w-full flex-col items-start space-y-4 px-8 sm:w-[40rem] lg:w-[60rem]"
     >
       <p>
-        Olá, meu nome é Vinícius, tenho 22 anos e sou desenvolvedor frontend a
-        mais de 3 anos.
+        Olá, meu nome é Vinícius, tenho 23 anos e sou desenvolvedor frontend a
+        mais de 4 anos.
       </p>
       <p>
         Minhas principais tecnologias hoje são o React, next e typescript,
