@@ -2,15 +2,12 @@
 import Link from "./components/Link.vue";
 import Logo from "./components/Logo.vue";
 import { TECHNOLOGIES } from "./constants/technologies";
-// @ts-ignore
 import VueWriter from "vue-writer";
 import "./styles.css";
-import { onMounted } from "vue";
-import { driverService } from "./services/driver";
 
-onMounted(() => {
-  driverService.drive();
-});
+// onMounted(() => {
+//   driverService.drive();
+// });
 </script>
 
 <template>
@@ -41,38 +38,31 @@ onMounted(() => {
       className="flex w-full flex-col items-start space-y-4 px-8 sm:w-[40rem] lg:w-[60rem]"
     >
       <p>
-        Olá, meu nome é Vinícius, tenho 21 anos e sou desenvolvedor frontend a
-        mais de 2 anos.
+        Olá, meu nome é Vinícius, tenho 22 anos e sou desenvolvedor frontend a
+        mais de 3 anos.
       </p>
       <p>
-        Minhas principais tecnologias hoje são o React, Next e typescript,
-        porém, estou estudando Vue e, em breve, Angular.
+        Minhas principais tecnologias hoje são o React, next e typescript,
+        porém, estou estudando Vue.
       </p>
       <p>
         Já trabalhei com várias tecnologias de estilização como styled
-        components, stitches, sass, etc. Hoje estou trabalhando bastante com
-        Chakra UI e Tailwind.
+        components, stitches, sass, etc. Hoje estou trabalhando com Chakra UI e
+        Tailwind.
       </p>
       <p>
-        Atualmente sou desenvolvedor frontend pleno na
-        <Link
-          link="https://www.linkedin.com/company/dataside-data-ia"
-          name="Dataside."
-        />
+        Atualmente sou Software Engineer III na
+        <Link link="https://www.linkedin.com/company/stone-co" name="Stone." />
       </p>
       <p>
-        Sou professor de desenvolvimento frontend na
-        <Link link="https://www.inclus.com.br/index.html" name="Inclus." /> Uma
-        iniciativa filantrópica consolidada em minha cidade há 10 anos, na qual
-        oferta alguns cursos na área de tecnologia.
+        Sou professor de programação na
+        <Link link="https://www.inclus.com.br/index.html" name="Inclus." />
+        Uma iniciativa filantrópica consolidada em minha cidade há 20 anos, na
+        qual oferta alguns cursos na área de tecnologia.
       </p>
       <p>
         Estou em constante evolução e buscando sempre me aventurar por novos
         desafios.
-      </p>
-      <p>
-        Confira alguns vídeos técnicos meus no
-        <Link link="https://www.youtube.com/@ovinidev/videos" name="youtube." />
       </p>
     </section>
 
@@ -92,10 +82,6 @@ onMounted(() => {
           name="LinkedIn"
         />
         <Link link="https://github.com/ovinidev" name="Github" />
-        <Link
-          link="https://www.youtube.com/channel/UCpnNH4Q4gWA_3GB4LNn8dhQ"
-          name="Youtube"
-        />
       </div>
     </footer>
   </main>

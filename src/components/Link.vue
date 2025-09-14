@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { name } = defineProps({
+const { name , link} = defineProps({
   name: String,
   link: String,
 });
