@@ -1,13 +1,13 @@
 <script setup lang="ts">
-const { name , link} = defineProps({
-  name: String,
-  link: String,
-});
+  const { name, link } = defineProps({
+    name: String,
+    link: String
+  })
 </script>
 
 <template>
   <a
-    className="underline"
+    class="underline"
     target="_blank"
     rel="noreferrer"
     :href="link"

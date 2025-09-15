@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import Link from "./components/Link.vue";
-import Logo from "./components/Logo.vue";
-import { TECHNOLOGIES } from "./constants/technologies";
-import VueWriter from "vue-writer";
+  import Link from './components/Link.vue'
+  import Logo from './components/Logo.vue'
+  import { TECHNOLOGIES } from './constants/technologies'
+  import VueWriter from 'vue-writer'
 
-// onMounted(() => {
-//   driverService.drive();
-// });
+  // onMounted(() => {
+  //   driverService.drive();
+  // });
 </script>
 
 <template>
   <main
-    className="flex bg-green-950 min-h-screen flex-col items-center justify-start space-y-14 bg-background py-14 text-slate-50"
+    class="bg-background flex min-h-screen flex-col items-center justify-start space-y-14 bg-green-950 py-14 text-slate-50"
   >
     <header
       id="header"
-      className="flex h-44 w-44 flex-col items-center justify-between"
+      class="flex h-44 w-44 flex-col items-center justify-between"
     >
       <VueWriter
         id="name"
@@ -26,7 +26,7 @@ import VueWriter from "vue-writer";
 
       <img
         id="image"
-        className="h-36 rounded-full"
+        class="h-36 rounded-full"
         alt="vini profile photo"
         src="https://github.com/ovinidev.png"
       />
@@ -34,39 +34,37 @@ import VueWriter from "vue-writer";
 
     <section
       id="content-1"
-      className="flex w-full flex-col items-start space-y-4 px-8 sm:w-[40rem] lg:w-[60rem]"
+      class="flex w-full flex-col items-start space-y-4 px-8 sm:w-[40rem] lg:w-[60rem]"
     >
       <p>
-        Olá, meu nome é Vinícius, tenho 23 anos e sou desenvolvedor frontend a
-        mais de 4 anos.
+        Hello, my name is Vinícius, I’m 23 years old and I’ve been working as a
+        frontend developer for over 4 years.
       </p>
       <p>
-        Minhas principais tecnologias hoje são o React, next e typescript,
-        porém, estou estudando Vue.
+        My main technologies today are React, Next.js, and TypeScript, but I’m
+        currently studying Vue.
       </p>
       <p>
-        Já trabalhei com várias tecnologias de estilização como styled
-        components, stitches, sass, etc. Hoje estou trabalhando com Chakra UI e
-        Tailwind.
+        I've worked with several styling technologies such as Styled Components,
+        Stitches, Sass, etc. Today I’m working with Chakra UI and Tailwind.
       </p>
       <p>
-        Atualmente sou Software Engineer III na
+        I'm currently a Software Engineer III at
         <Link link="https://www.linkedin.com/company/stone-co" name="Stone." />
       </p>
       <p>
-        Sou professor de programação na
+        I'm also a programming instructor at
         <Link link="https://www.inclus.com.br/index.html" name="Inclus." />
-        Uma iniciativa filantrópica consolidada em minha cidade há 20 anos, na
-        qual oferta alguns cursos na área de tecnologia.
+        A philanthropic initiative established in my city 20 years ago, which
+        offers several courses in the field of technology.
       </p>
       <p>
-        Estou em constante evolução e buscando sempre me aventurar por novos
-        desafios.
+        I'm constantly evolving and always looking to take on new challenges.
       </p>
     </section>
 
-    <footer className="flex flex-col items-center space-y-6">
-      <div id="techs" className="flex flex-wrap items-center gap-3 px-8">
+    <footer class="flex flex-col items-center space-y-6">
+      <div id="techs" class="flex flex-wrap items-center gap-3 px-8">
         <Logo
           v-for="tech in TECHNOLOGIES"
           :key="tech.alt"
@@ -75,7 +73,7 @@ import VueWriter from "vue-writer";
         />
       </div>
 
-      <div id="social" className="text-secondary flex items-center space-x-4">
+      <div id="social" class="text-secondary flex items-center space-x-4">
         <Link
           link="httEps://www.linkedin.com/in/vinimedeiros13"
           name="LinkedIn"
