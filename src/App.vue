@@ -3,7 +3,6 @@ import Link from "./components/Link.vue";
 import Logo from "./components/Logo.vue";
 import { TECHNOLOGIES } from "./constants/technologies";
 import VueWriter from "vue-writer";
-import "./styles.css";
 
 // onMounted(() => {
 //   driverService.drive();
@@ -12,7 +11,7 @@ import "./styles.css";
 
 <template>
   <main
-    className="flex min-h-screen flex-col items-center justify-start space-y-14 bg-background py-14 text-slate-50"
+    className="flex bg-green-950 min-h-screen flex-col items-center justify-start space-y-14 bg-background py-14 text-slate-50"
   >
     <header
       id="header"
