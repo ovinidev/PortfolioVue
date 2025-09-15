@@ -11,7 +11,8 @@
 
 <template>
   <main
-    class="bg-background flex min-h-screen flex-col items-center justify-start space-y-14 bg-green-950 py-14 text-slate-50"
+    class="flex min-h-screen flex-col items-center justify-start space-y-14 py-14 text-slate-50"
+    style="background-color: #042905"
   >
     <header
       id="header"
